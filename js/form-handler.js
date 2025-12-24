@@ -108,10 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Form data to submit:", data);
 
-    // Имитация задержки сети
+    console.log("Ready?", response);
+
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    // В реальном проекте раскомментируйте один из вариантов выше и удалите этот return
     return {
       ok: true,
       json: async () => ({ success: true }),
