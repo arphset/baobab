@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drupal-Coder - Профессиональная разработка и поддержка Drupal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Шапка с видеофоном -->
+    <header class="header">
+      <div class="video-container">
+        <video autoplay muted loop playsinline id="header-video">
+          <source src="video.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-content">
+            <div class="logo">
+              <span class="logo-text">Drupal-Coder</span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link"
+                  >Администрирование <i class="fas fa-chevron-down"></i
+                ></a>
+                <div class="dropdown-menu">
+                  <a href="#">Миграция</a>
+                  <a href="#">Бэкапы</a>
+                  <a href="#">Аудит безопасности</a>
+                  <a href="#">Оптимизация скорости</a>
+                  <a href="#">Переезд на HTTPS</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a href="#pricing" class="nav-link">Тарифы</a>
+              </li>
+              <li class="nav-item">
+                <a href="#team" class="nav-link">Команда</a>
+              </li>
+              <li class="nav-item">
+                <a href="#reviews" class="nav-link">Отзывы</a>
+              </li>
+              <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <div class="container">
+          <h1 class="header-title">
+            13 лет совершенствуем компетенции в Drupal поддержке!
+          </h1>
+          <p class="header-subtitle">
+            Разрабатываем и оптимизируем модули, расширяем функциональность
+            сайтов, обновляем дизайн
+          </p>
+          <a href="#contact" class="btn-primary">Связаться с нами</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Секция услуг -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title">Наши услуги</h2>
+          <p class="section-subtitle">
+            Полный спектр услуг по разработке, поддержке и продвижению
+            Drupal-сайтов
+          </p>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-plus-circle"></i>
+              </div>
+              <h3 class="service-title">
+                Добавление информации на сайт, создание новых разделов
+              </h3>
+              <p class="service-description">
+                Разработка новых модулей сайта, расширение функциональности
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="service-title">Разработка модулей сайта</h3>
+              <p class="service-description">
+                Интеграция с CRM, 1С, платежными системами и любыми
+                веб-сервисами
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 class="service-title">
+                Аудит и мониторинг безопасности Drupal сайтов
+              </h3>
+              <p class="service-description">
+                Миграция, импорт контента и апгрейд Drupal
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              <h3 class="service-title">
+                Оптимизация и ускорение Drupal-сайтов
+              </h3>
+              <p class="service-description">
+                Веб-маркетинг, консультации и работы по SEO
+              </p>
+            </div>
+          </div>
+
+          <div class="support-section">
+            <h2 class="section-title">Поддержка от Drupal-coder</h2>
+            <div class="support-features">
+              <div class="feature">
+                <div class="feature-number">01</div>
+                <h3 class="feature-title">Постановка задач по Email</h3>
+                <p class="feature-description">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-number">02</div>
+                <h3 class="feature-title">Система Helpdesk - отчетность</h3>
+                <p class="feature-description">
+                  Возможность посмотреть все заявки в работе и отработанные часы
+                  в личном кабинете через браузер.
+                </p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-number">03</div>
+                <h3 class="feature-title">Расширенная техническая поддержка</h3>
+                <p class="feature-description">
+                  Возможность организации расширенной техподдержки с 6:00 до
+                  22:00 без выходных.
+                </p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-number">04</div>
+                <h3 class="feature-title">Персональный менеджер проекта</h3>
+                <p class="feature-description">
+                  Ваш менеджер всегда в курсе текущего состояния проекта и готов
+                  ответить на любые вопросы.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция преимуществ -->
+      <section class="advantages">
+        <div class="container">
+          <h2 class="section-title">Наши преимущества</h2>
+
+          <div class="advantages-grid">
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <i class="fas fa-file-contract"></i>
+              </div>
+              <h3 class="advantage-title">Работаем с SLA и NDA</h3>
+              <p class="advantage-description">
+                Работа в рамках соглашений о конфиденциальности любого уровня
+              </p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="advantage-title">Штатные специалисты</h3>
+              <p class="advantage-description">
+                Надежные штатные специалисты, никаких фрилансеров
+              </p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3 class="advantage-title">Удобные каналы связи</h3>
+              <p class="advantage-description">
+                Консультации по телефону, скайпу, в мессенджерах
+              </p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <h3 class="advantage-title">Удобные способы оплаты</h3>
+              <p class="advantage-description">
+                Безналичный расчет по договору или электронные деньги: WebMoney,
+                Яндекс.Деньги, Paypal
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция тарифов -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-title">Тарифы</h2>
+          <p class="section-subtitle">
+            Выберите подходящий тариф для вашего проекта
+          </p>
+
+          <div class="pricing-cards">
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3 class="pricing-title">Стартовый</h3>
+                <div class="price">от 6 000 ₽/мес</div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>
+                  <i class="fas fa-check-circle"></i> Консультации и работы по
+                  SEO
+                </li>
+                <li><i class="fas fa-check-circle"></i> Услуги дизайнера</li>
+                <li>
+                  <i class="fas fa-times-circle"></i> Неиспользованные
+                  оплаченные часы переносятся на следующий месяц
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Высокое время реакции - 2
+                  рабочих дня
+                </li>
+              </ul>
+
+              <a href="#contact" class="btn-secondary">Выбрать тариф</a>
+            </div>
+
+            <div class="pricing-card featured">
+              <div class="pricing-badge">Популярный</div>
+              <div class="pricing-header">
+                <h3 class="pricing-title">Бизнес</h3>
+                <div class="price">от 30 000 ₽/мес</div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>
+                  <i class="fas fa-check-circle"></i> Консультации и работы по
+                  SEO
+                </li>
+                <li><i class="fas fa-check-circle"></i> Услуги дизайнера</li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Неиспользованные
+                  оплаченные часы переносятся
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Максимальное время реакции
+                  - в день обращения
+                </li>
+              </ul>
+
+              <a href="#contact" class="btn-primary">Выбрать тариф</a>
+            </div>
+
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3 class="pricing-title">VIP</h3>
+                <div class="price">от 270 000 ₽/мес</div>
+              </div>
+
+              <ul class="pricing-features">
+                <li>
+                  <i class="fas fa-check-circle"></i> Консультации и работы по
+                  SEO
+                </li>
+                <li><i class="fas fa-check-circle"></i> Услуги дизайнера</li>
+                <li>
+                  <i class="fas fa-times-circle"></i> Неиспользованные
+                  оплаченные часы НЕ переносятся
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Максимальное время реакции
+                  - в день обращения
+                </li>
+              </ul>
+
+              <a href="#contact" class="btn-secondary">Выбрать тариф</a>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <h2 class="cta-title">Получить индивидуальный тариф</h2>
+            <p class="cta-text">
+              Наши профессиональные разработчики выполнят быстро любые задачи
+            </p>
+            <a href="#contact" class="btn-primary btn-large"
+              >Связаться с нами</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция дополнительных услуг -->
+      <section class="extra-services">
+        <div class="container">
+          <h2 class="section-title">Дополнительные услуги</h2>
+
+          <div class="extra-services-grid">
+            <div class="extra-service">
+              <div class="extra-service-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="extra-service-title">
+                Настройка событий GA в интернет-магазине
+              </h3>
+              <div class="price-from">от 18 000 ₽</div>
+            </div>
+
+            <div class="extra-service">
+              <div class="extra-service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="extra-service-title">
+                Разработка мобильной версии сайта
+              </h3>
+              <div class="price-from">от 20 000 ₽</div>
+            </div>
+
+            <div class="extra-service">
+              <div class="extra-service-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <h3 class="extra-service-title">Интеграция модуля оплаты</h3>
+              <div class="price-from">от 84 000 ₽</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция команды -->
+      <section class="team" id="team">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <p class="section-subtitle">Эксперты в Drupal с опытом от 14 лет</p>
+
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-photo">
+                <div class="photo-placeholder">Сергей Синица</div>
+              </div>
+              <h3 class="member-name">Сергей Синица</h3>
+              <p class="member-position">
+                Руководитель отдела веб-разработки, канд. тех. наук, заместитель
+                директора
+              </p>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <div class="photo-placeholder">Алексей Синица</div>
+              </div>
+              <h3 class="member-name">Алексей Синица</h3>
+              <p class="member-position">
+                Руководитель отдела поддержки сайтов
+              </p>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <div class="photo-placeholder">Ban</div>
+              </div>
+              <h3 class="member-name">Ban</h3>
+              <p class="member-position">
+                Руководитель отдела поддержки сайтов
+              </p>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <div class="photo-placeholder">Рустам Семенов</div>
+              </div>
+              <h3 class="member-name">Рустам Семенов</h3>
+              <p class="member-position">
+                Руководитель отдела продвижения, контекстной рекламы и
+                контент-поддержки сайтов
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция кейсов -->
+      <section class="cases" id="reviews">
+        <div class="container">
+          <h2 class="section-title">Последние кейсы</h2>
+
+          <div class="cases-grid">
+            <div class="case-card">
+              <h3 class="case-title">
+                Настройка кэширования данных. Апгрейд сервера. Ускорение работы
+                сайта в 30 раз!
+              </h3>
+              <p class="case-description">
+                Пользовательские отчеты влияния скорости загрузки страниц
+                интернет-магазина в Яндекс.Метрике на отказы и конверсии.
+              </p>
+              <a href="#" class="case-link">Кейс ускорения...</a>
+            </div>
+
+            <div class="case-card">
+              <h3 class="case-title">
+                Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1С:
+                Предприятие, МойСклад, Класс365
+              </h3>
+              <p class="case-description">
+                Повышение конверсии страницы с формой заказа благодаря
+                применению A/B тестирования.
+              </p>
+            </div>
+
+            <div class="case-card">
+              <h3 class="case-title">
+                Drupal 7: ускорение времени генерации страниц интернет-магазина
+                на 329%
+              </h3>
+              <p class="case-description">Опубликован рейтинг модулей...</p>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review-header">
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="review-author">Ольга, www.cielparfum.com</div>
+            </div>
+            <p class="review-text">
+              "Получите помощь единственного и неповторимого мастера на
+              многостраничный сайт www.cielparfum.com, который был собран крайне
+              некомпетентным программистом и раз в месяц стабильно грозился
+              погибнуть... В итоге, к ребятам из Drupal-coder. И вот уже
+              практически полгода как не проходит и дня, чтобы я не восхищалась
+              или не порадовалась своему вебением... Ребята провели ревизию - не
+              отходя от желаемого, но со своими существенными и качественными
+              дополнениями. Осуществили ряд проектов - конкурсные тестинги и
+              т.д. А уж мелких доработок и переделок - не счесть! И главное -
+              все качественно и быстро (не смотря на не самый "быстрый" тариф).
+              Есть вопросы - замечательный Алексей всегда подскажет поддержит
+              или отремонтирует или просто сделает с нуля. Есть задумка для
+              реализации - замечательный Сергей обсудит или предложит идеальный
+              вариант. Есть проблема - замечательные Анна и Роман помогут,
+              подправят, сделают! Ребята показали, что эта CMS - мощная и
+              грамотная система управления. Надеюсь что наше сотрудничество
+              затянется надолго! Спасибо!"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция клиентов -->
+      <section class="clients" id="clients">
+        <div class="container">
+          <h2 class="section-title">С нами работают</h2>
+          <p class="section-subtitle">
+            Десятки компаний доверяют нам самое ценное, что у них есть в
+            интернете - свои сайты. Мы делаем все, чтобы наше сотрудничество
+            было долгим.
+          </p>
+
+          <div class="clients-slider">
+            <div class="slider-container">
+              <div class="clients-track" id="clients-track">
+                <!-- Логотипы будут добавляться через JavaScript -->
+              </div>
+            </div>
+
+            <button class="slider-arrow prev" id="prev-client">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next" id="next-client">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="slider-dots" id="slider-dots">
+              <!-- Точки навигации -->
+            </div>
+          </div>
+
+          <div class="clients-stats">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-text">компаний-клиентов</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">14</div>
+              <div class="stat-text">лет на рынке</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">200+</div>
+              <div class="stat-text">успешных проектов</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">99%</div>
+              <div class="stat-text">клиентов рекомендуют</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция FAQ -->
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="section-title">Часто задаваемые вопросы</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>1. Кто непосредственно занимается поддержкой?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Сайты поддерживают штатные сотрудники ООО "Инжинилаб" г.
+                  Краснодар, прошедшие специальное обучение и имеющие опыт
+                  работы с Drupal от 4 до 15 лет: 8 веб-разработчиков, 2
+                  специалиста по SEO, 4 системных администратора.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>2. Как организована работа поддержки?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Работа организована через систему тикетов (заявок), которые
+                  клиенты создают через email, телефон или личный кабинет.
+                  Каждой заявке присваивается приоритет и срок выполнения.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >3. Что происходит когда отработаны все предусмотренные часы
+                  за месяц?</span
+                >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Если все оплаченные часы за месяц исчерпаны, дальнейшая работа
+                  приостанавливается до следующего расчетного периода, либо
+                  клиент может докупить дополнительные часы по текущему тарифу.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >4. Что происходит когда не отработаны все предусмотренные
+                  часы за месяц?</span
+                >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  В зависимости от тарифного плана, неиспользованные часы могут
+                  переноситься на следующий месяц (в тарифах Стартовый и Бизнес)
+                  или сгорать (в VIP тарифе).
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >5. Как происходит оценка и согласование планируемого времени
+                  на выполнение заявок?</span
+                >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  После получения заявки менеджер проекта оценивает объем работ
+                  и согласовывает с клиентом предполагаемое время выполнения.
+                  После согласования работа включается в план.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Контактная форма -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-info">
+              <h2 class="section-title">Оставить заявку на поддержку сайта</h2>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h3>Телефон</h3>
+                  <a href="tel:88002222673">8 800 222-26-73</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:info@drupal-coder.ru">info@drupal-coder.ru</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h3>Время работы поддержки</h3>
+                  <p>Пн-Пт: 9:00 - 18:00</p>
+                  <p>Расширенная поддержка: 6:00 - 22:00 без выходных</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <form id="support-form">
+                <div class="form-group">
+                  <label for="name">Имя</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="company">Компания</label>
+                  <input type="text" id="company" name="company" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="tariff">Интересующий тариф</label>
+                  <select id="tariff" name="tariff">
+                    <option value="">Выберите тариф</option>
+                    <option value="start">Стартовый</option>
+                    <option value="business">Бизнес</option>
+                    <option value="vip">VIP</option>
+                    <option value="individual">Индивидуальный</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Сообщение</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Опишите вашу задачу или вопрос..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-block">
+                  Отправить заявку
+                </button>
+                <div id="form-message" class="form-message"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">Drupal-Coder</span>
+            <p>Экспертиза в Drupal, опыт 14 лет!</p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Услуги</h3>
+            <ul>
+              <li><a href="#services">Разработка</a></li>
+              <li><a href="#services">Поддержка</a></li>
+              <li><a href="#services">Аудит безопасности</a></li>
+              <li><a href="#services">Оптимизация</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Контакты</h3>
+            <ul>
+              <li><a href="tel:88002222673">8 800 222-26-73</a></li>
+              <li>
+                <a href="mailto:info@drupal-coder.ru">info@drupal-coder.ru</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Мы в соцсетях</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 Drupal-Coder. Все права защищены.</p>
+          <p>Drupal-разработчик России по версии Рейтинга Рунета</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/clients-carousel.js"></script>
+  </body>
+</html>
